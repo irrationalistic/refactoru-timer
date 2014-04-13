@@ -8,7 +8,7 @@ lastTimerTeam = 0;
 
 times = [60, 120, 180];
 
-bonusTimes = [30, 2];
+bonusTimes = [30, 20];
 
 timer = null;
 
@@ -73,6 +73,7 @@ $(function() {
     }
   });
   $('.turn').click(function() {
+    timer.stop();
     currentTeam = currentTeam === 0 ? 1 : 0;
     return $('.team').eq(currentTeam).addClass('active').siblings().removeClass('active');
   });

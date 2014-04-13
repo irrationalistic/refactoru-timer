@@ -4,7 +4,7 @@
     @include box-sizing(border-box);
 }
 
-$base-font-size: 20px;
+$base-font-size: 30px;
 $font-header: 'Source Sans Pro', sans-serif;
 $font-base: 'Open Sans', sans-serif;
 
@@ -49,9 +49,9 @@ button {
 footer {
     position: fixed;
     bottom: 0;
-    left: 0;
+    top: 6em;
     width: 100%;
-    padding: 20px 0;
+    // padding: 20px 0;
     ul {
         list-style-type: none;
         width: 100%;
@@ -75,6 +75,7 @@ footer {
     border-bottom: 0.2em solid #DDD;
     position: relative;
     overflow: hidden;
+    height: 3em;
 
     &.active {
         background: #34495e;
@@ -83,7 +84,7 @@ footer {
     }
     
     ul {
-        margin: 0 1.5em 0 0;
+        margin: 0 0.75em 0 0;
         padding: 0;
         overflow: hidden;
         float: left;

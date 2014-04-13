@@ -3,7 +3,7 @@ timerTeam = 0;
 lastTimerTeam = 0;
 
 times = [60, 120, 180]
-bonusTimes = [30, 2]
+bonusTimes = [30, 20]
 
 timer = null
 
@@ -71,6 +71,7 @@ $ ->
 
   # allow switching turns between teams
   $('.turn').click ()->
+    timer.stop()
     currentTeam = if currentTeam is 0 then 1 else 0
     $('.team')
       .eq(currentTeam)
