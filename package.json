@@ -1,0 +1,13 @@
+{
+  "name": "refactoru-timer",
+  "version": "0.0.0",
+  "description": "",
+  "devDependencies": {
+    "grunt-contrib-coffee": "~0.10.1",
+    "grunt": "~0.4.4",
+    "grunt-sass": "~0.12.1",
+    "bourbon": "0.0.2",
+    "node-bourbon": "~1.0.0",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}

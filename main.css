@@ -1,0 +1,137 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 30px sans-serif;
+    color: #333;
+}
+
+button {
+    font-size: 0.7em;
+    padding: 0.6em 1em;
+    margin: 0;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-bottom: 0px solid #333;
+    -webkit-transition: all 0.2s;
+       -moz-transition: all 0.2s;
+            transition: all 0.2s;
+}
+    button:hover {
+        top: -5px;
+        border-bottom-width: 5px;
+    }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+    footer ul {
+        list-style-type: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    footer li {
+        float: right;
+        padding: 0 20px 0 0;
+    }
+
+.row {
+    overflow: hidden;
+}
+
+.team {
+    background: #EFEFEF;
+    border-bottom: 0.2em solid #DDD;
+}
+    .team.active {
+        background: #34495e;
+        color: #ecf0f1;
+        border-color: #2c3e50;
+    }
+    
+    .team ul {
+        margin: 0 1.5em 0 0;
+        padding: 0;
+        overflow: hidden;
+        float: left;
+    }
+
+    .team h2,
+    .team li {
+        float: left;
+        list-style-type: none;
+        line-height: 1em;
+        margin: 0 0.3em;
+        padding: 0.5em 0;
+    }
+    .team h2 {
+        margin-right: 1em;
+    }
+    .team h2:before {
+        display: inline-block;
+        width: 30px;
+        content: ' ';
+    }
+    .team.active h2:before {
+        content: '»';
+    }
+
+    .team .actions {
+        float: right;
+    }
+
+.easy { background: #2ecc71; }
+.medium { background: #e67e22; }
+.hard { background: #e74c3c; }
+.extend { background: #3498DB; }
+.friend { background: #9B59B6; }
+.disabled {
+    background: #CCC;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.team-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.timer-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
+    display: table;
+    
+}
+    #timer {
+        display: table-cell;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 15em;
+        font-weight: bold;
+    }

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>RefactorU - Timer</title>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery-powertip/1.2.0/css/jquery.powertip.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="row team-container">
+            <div class="row team active">
+                <h2 contenteditable>Team 1</h2>
+                <div class="actions">
+                    <ul>
+                        <li><button class="easy" title="1:00">Easy</button></li>
+                        <li><button class="medium" title="2:00">Medium</button></li>
+                        <li><button class="hard" title="3:00">Hard</button></li>
+                        <li><button class="stop">Stop</button></li>
+                    </ul>
+                    <ul>
+                        <li><button class="extend">+30s</button></li>
+                        <li><button class="extend">+30s</button></li>
+                        <li><button class="friend">+20s</button></li>
+                        <li><button class="friend">+20s</button></li>
+                    </ul>
+                </div>
+                <div class="progress"></div>
+            </div>
+            <div class="row team">
+                <h2 contenteditable>Team 2</h2>
+                <div class="actions">
+                    <ul>
+                        <li><button class="easy" title="1:00">Easy</button></li>
+                        <li><button class="medium" title="2:00">Medium</button></li>
+                        <li><button class="hard" title="3:00">Hard</button></li>
+                        <li><button class="stop">Stop</button></li>
+                    </ul>
+                    <ul>
+                        <li><button class="extend">+30s</button></li>
+                        <li><button class="extend">+30s</button></li>
+                        <li><button class="friend">+20s</button></li>
+                        <li><button class="friend">+20s</button></li>
+                    </ul>
+                </div>
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="row timer-container">
+            <div id="timer"></div>
+        </div>
+        <footer>
+            <ul>
+                <li><button class="pause">Pause</button></li>
+                <li><button class="turn">Next Turn</button></li>
+            </ul>
+        </footer>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-powertip/1.2.0/jquery.powertip.min.js"></script>
+        <script src="js/timer.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
